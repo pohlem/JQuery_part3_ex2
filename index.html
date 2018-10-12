@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <script src="assets/JQuery/jquery-3.2.1.js"></script>
+  <title>Exercice 1</title>
+</head>
+<body>
+  <form>
+  	<input type="text"  id="text" value=0 disabled="disabled"></input>
+    <input type="button" name="button" id="add" value="+"></input>
+    <input type="button" name="button" id="soust" value="-"></input>
+  </form>
+  <script>
+    $('#add').click(function(){$('#text').val(parseInt($('#text').val())+1);});
+    $('#soust').click(function(){$('#text').val(parseInt($('#text').val())-1);});
+  </script>
+</body>
+</html>
